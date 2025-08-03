@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MonComptable AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>MonComptable AI</h1>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Mot de passe" required />
+      <button type="submit">Connexion</button>
+    </form>
+  </div>
+
+  <div class="dashboard" style="display: none;">
+    <h2>Tableau de bord</h2>
+    <div class="cards">
+      <div class="card">💰 Revenus : 4 200€</div>
+      <div class="card">📉 Dépenses : 1 670€</div>
+      <div class="card">📊 Bilan : +2 530€</div>
+    </div>
+    <div class="chatbot">
+      <div class="chat-header">💬 Chatbot Fiscal</div>
+      <div class="chat-body" id="chat"></div>
+      <input type="text" id="userInput" placeholder="Posez une question..." />
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
